@@ -27,6 +27,7 @@
     }
   }
   .card-project {
+    @apply w-full;
     .project-image {
       background-size: cover;
       background-position: center;

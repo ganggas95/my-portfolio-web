@@ -12,7 +12,9 @@ const CardProject: React.FC<CardProjectPropsType> = ({
 }: CardProjectPropsType) => {
   return (
     <CarouselItem
-      className={"basis-1/3 flex flex-col justify-start gap-2 card-project"}
+      className={
+        "basis-1/1 md:basis-1/3 flex flex-col justify-start gap-2 card-project"
+      }
     >
       <div
         className="h-80 w-full project-image"

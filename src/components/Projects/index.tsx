@@ -70,7 +70,7 @@ const ProjectSection: React.FC = () => {
     },
   ] as ProjectType[];
   return (
-    <section className="py-4 w-full project-section px-24" id="projects">
+    <section className="py-4 w-full project-section px-14 md:px-24" id="projects">
       <div className="h-full w-full flex flex-col justify-center items-center gap-y-4">
         <h1 className="text-center text-4xl">Projects</h1>
         <Carousel

@@ -36,26 +36,28 @@ const ContactSection: React.FC = () => {
   ];
   return (
     <section
-      className="py-4 w-full contact-section px-24 flex items-center"
+      className="py-4 w-full contact-section px-14 md:px-24 flex items-center"
       id="contact"
     >
       <div className="w-full flex flex-col gap-y-24 justify-center items-center">
-        <div className="w-1/2 flex flex-col gap-y-4 items-center justify-center">
-          <h1 className="text-4xl">Let&apos;s talk</h1>
-          <p>
+        <div className="w-full md:w-1/2 flex flex-col gap-y-4 items-center justify-center">
+          <h1 className="text-4xl text-center md:text-left">
+            Let&apos;s talk
+          </h1>
+          <p className="text-center md:text-left">
             If you want to get closer, collaborate, or just say Hi, please fill
             in the form below.
           </p>
           <Form.Root
             onSubmit={handleSubmit}
-            className="w-full flex flex-row gap-x-2 justify-center"
+            className="w-full flex flex-col md:flex-row gap-2 justify-center"
           >
-            <Form.Field name="email" className="w-2/5">
+            <Form.Field name="email" className="w-full md:w-2/5">
               <Form.Control
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded px-3 h-full leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded px-3 py-2 h-10 leading-tight focus:outline-none focus:bg-white"
                 placeholder="Enter your email"
               />
             </Form.Field>
