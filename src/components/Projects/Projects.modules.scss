@@ -1,0 +1,40 @@
+.project-section {
+  height: 100vh;
+  h1 {
+    position: relative;
+    max-width: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &::after {
+      transition: all 0.5s ease-in-out;
+      transform: translateX(20%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 2px;
+      background-color: hsl(var(--destructive));
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(-100%);
+      }
+    }
+  }
+  .card-project {
+    @apply w-full;
+    .project-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    transition: all;
+    transition-duration: 300ms;
+  }
+}
