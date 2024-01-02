@@ -61,7 +61,7 @@ const SkillsSection: React.FC = () => {
             {skills.map((skill) => (
               <div className="flex flex-col" key={skill.name}>
                 <label className="text-sm">{skill.name}</label>
-                <Progress value={skill.level * 10} max={10} className="w-full" />
+                <Progress value={skill.level * 10} max={10} className="w-full bg-destructive-foreground"/>
               </div>
             ))}
           </ul>

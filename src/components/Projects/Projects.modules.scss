@@ -7,8 +7,8 @@
     overflow: hidden;
 
     &::after {
-        transition: all 0.5s ease-in-out;
-        transform: translateX(20%);
+      transition: all 0.5s ease-in-out;
+      transform: translateX(20%);
     }
 
     &::after {
@@ -21,9 +21,19 @@
     }
 
     &:hover {
-        &::after {
-            transform: translateX(-100%);
-        }
+      &::after {
+        transform: translateX(-100%);
+      }
     }
+  }
+  .card-project {
+    .project-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    transition: all;
+    transition-duration: 300ms;
   }
 }
