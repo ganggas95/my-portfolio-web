@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="py-4 w-full hero-section px-4 md:px-24 flex items-center">
       <div className="w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
-        <div className="w-full md:w-1/2 flex flex-col gap-y-4 items-center md:items-between mt-10 md:mt-0">
+        <div className="w-full md:w-1/2 flex flex-col gap-y-4 items-center md:items-start mt-10 md:mt-0">
           <h3 className="text-netural">Hi, I am</h3>
           <h1 className="text-4xl inline-flex gap-x-3 text-center md:text-left hero-name">
             Subhan Nizar
