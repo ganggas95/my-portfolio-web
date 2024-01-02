@@ -1,0 +1,28 @@
+.hero-section {
+  height: 100vh;
+  .hero-name {
+    position: relative;
+    color: hsl(var(--destructive));
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: fit-content;
+    display: inline-block;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: hsl(var(--destructive));
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateX(-100%);
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover {
+      &::after {
+        transform: translateX(0);
+      }
+    }
+  }
+  
+}

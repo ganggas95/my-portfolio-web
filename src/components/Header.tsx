@@ -1,9 +1,9 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800 text-white py-4 w-full sticky">
+    <header className="bg-gray-800 z-10 text-white py-4 w-full sticky top-0">
       <nav className="container mx-auto flex items-center justify-between">
         <div>
           {/* Add your logo or website title here */}
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/#about">About</Link>
+            <Link href="/#skills">Skills</Link>
           </li>
           <li>
             <Link href="/#projects">Projects</Link>

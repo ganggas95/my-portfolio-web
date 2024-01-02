@@ -28,8 +28,8 @@
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 23, 100%, 50%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -74,7 +74,6 @@
     @apply border-border;
   }
 
-
   @media (prefers-color-scheme: dark) {
     :root {
       --foreground-rgb: 255, 255, 255;
@@ -89,5 +88,68 @@
     margin: 0;
     line-height: 1.5;
     font-family: "Josefin Sans", sans-serif;
+  }
+
+  .bg-hero {
+    [class^="bg-"] {
+      position: absolute;
+      height: 55%;
+      width: 55%;
+      z-index: 1;
+      border-radius: 20%;
+      transition: transform 2.5s ease-in-out;
+    }
+
+    .bg-1 {
+      bottom: 0%;
+      background-color: #1f2937;
+      left: 0%;
+    }
+
+    .bg-2 {
+      background-color: hsl(var(--destructive));
+      left: 0;
+      top: 0;
+    }
+
+    .bg-3 {
+      background-color: hsl(var(--destructive));
+      right: 0;
+      bottom: 0;
+    }
+
+    .bg-main {
+      transition: transform 5s ease-in-out;
+      transform: translate3d(0, 0, 0) scale(1);
+      background-position: 0.5rem -0.5rem;
+    }
+
+    &:hover {
+      .bg-2 {
+        transform: rotate(45deg);
+      }
+
+      .bg-3 {
+        transform: rotate(45deg);
+      }
+
+      .bg-main {
+        animation: bounce 3.5s infinite;
+        transform: translate3d(-100px, -50px, -100px) scale(1.01);
+        transition: transform 5s ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1.1);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.1);
   }
 }
