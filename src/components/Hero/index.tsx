@@ -1,8 +1,17 @@
 import React from "react";
 import MyPicture from "../MyPicture";
+import { Button } from "../ui/button";
 import "./Hero.modules.scss";
 
 const HeroSection: React.FC = () => {
+  const downloadCv = () => {
+    const link = document.createElement("a");
+    link.href = "/resume/Subhan-Nizar-Resume.pdf";
+    link.download = "Subhan-Nizar-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="py-4 w-full hero-section px-4 md:px-24 flex items-center">
       <div className="w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
@@ -18,11 +27,15 @@ const HeroSection: React.FC = () => {
             learning ability.
           </p>
 
-          {/* <div>
-            <Button className="max-w-md" variant={"destructive"}>
-              Hire me
+          <div>
+            <Button
+              className="max-w-md"
+              variant={"destructive"}
+              onClick={downloadCv}
+            >
+              Download Resume
             </Button>
-          </div> */}
+          </div>
         </div>
 
         <MyPicture />
