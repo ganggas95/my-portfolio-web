@@ -29,6 +29,22 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        linkedin: {
+          DEFAULT: "hsl(var(--linkedin))",
+          foregrount: "hsl(var(--linkedin-foreground))",
+        },
+        github: {
+          DEFAULT: "hsl(var(--github))",
+          foregrount: "hsl(var(--github-foreground))",
+        },
+        instagram: {
+          DEFAULT: "hsl(var(--instagram))",
+          foregrount: "hsl(var(--instagram-foreground))",
+        },
+        twitter: {
+          DEFAULT: "hsl(var(--twitter))",
+          foregrount: "hsl(var(--twitter-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

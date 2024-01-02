@@ -70,8 +70,8 @@ const ProjectSection: React.FC = () => {
     },
   ] as ProjectType[];
   return (
-    <section className="py-4 w-full project-section px-24 mt-24" id="projects">
-      <div className="container w-full flex flex-col justify-center items-center gap-y-4">
+    <section className="py-4 w-full project-section px-24" id="projects">
+      <div className="h-full w-full flex flex-col justify-center items-center gap-y-4">
         <h1 className="text-center text-4xl">Projects</h1>
         <Carousel
           opts={{
@@ -79,7 +79,7 @@ const ProjectSection: React.FC = () => {
           }}
           className="w-full max-w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="gap-x-10">
             {projects.map((project, index) => (
               <CardProject key={index} project={project} />
             ))}
