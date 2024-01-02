@@ -1,15 +1,14 @@
-import Image from "next/image";
-import React from "react";
 import "@/components/Hero.modules.scss";
+import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
     <section className="py-4 w-full hero-section px-24 flex items-center">
       <div className="w-full flex justify-between items-center">
         <div className="w-1/2 flex flex-col gap-y-4">
-          <h3 className="text-yellow-400">Fullstack Developer</h3>
+          <h3 className="text-yellow-400">Hi, I am</h3>
           <h1 className="text-4xl inline-flex gap-x-3">
-            Hello, my name is <span className="hero-name">Subhan Nizar</span>
+            <span className="hero-name">Subhan Nizar</span>
           </h1>
           <p className="text-sm max-w-md">
             Middle-level Fullstack Engineer with +6 years of experience working
@@ -17,6 +16,8 @@ const HeroSection: React.FC = () => {
             cases, creating Rest-API based on JSON data schema, and fast
             learning ability.
           </p>
+
+          <button className="btn">Hire me</button>
         </div>
         <div className="w-1/2 flex justify-end">
           <div className="relative h-[40rem] w-[40rem] min-w-[35rem] min-h-[35rem] bg-hero">
