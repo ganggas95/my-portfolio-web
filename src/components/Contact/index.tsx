@@ -11,8 +11,8 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     if (!email) return;
     var link =
-      "mailto:subhannizar25@gmail.com" +
-      "?cc=subhannizar25@gmail.com" +
+      "mailto:work@subhannizar.my.id" +
+      "?cc=work@subhannizar.my.id" +
       "&subject=" +
       encodeURIComponent("Hi Subhan Nizar") +
       "&body=" +
