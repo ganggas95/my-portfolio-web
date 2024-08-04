@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Head, Html, Main, NextScript } from "next/document";
 type Meta = {
   title: string;
@@ -41,6 +42,7 @@ export default function Document(): JSX.Element {
       </Head>
       <body>
         <Main />
+        <Analytics />
         <NextScript />
       </body>
     </Html>
