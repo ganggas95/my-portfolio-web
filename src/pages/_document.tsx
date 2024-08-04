@@ -12,9 +12,9 @@ type Meta = {
  */
 export default function Document(): JSX.Element {
   const meta: Meta = {
-    title: "Next.js Blog Starter Kit",
-    description: "Clone and deploy your own Next.js portfolio in minutes.",
-    image: "https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png",
+    title: "Subhan Nizar - Fullstack Engineer",
+    description: "Middle-level Fullstack Engineer with +6 years of experience working with local companies and International Companies. Creating test cases, creating Rest-API based on JSON data schema, and fast learning ability.",
+    image: "https://subhannizar.com/images/hero.png",
   };
 
   return (
@@ -27,7 +27,7 @@ export default function Document(): JSX.Element {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@yourname" />
+        <meta name="twitter:site" content="@subhannizar" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
