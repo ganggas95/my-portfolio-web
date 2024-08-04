@@ -3,7 +3,11 @@ import MyPicture from "../MyPicture";
 import { Button } from "../ui/button";
 import "./Hero.modules.scss";
 
-const HeroSection: React.FC = () => {
+const HeroSection: React.FC<{ experience: number }> = ({
+  experience,
+}: {
+  experience: number;
+}) => {
   const downloadCv = () => {
     const link = document.createElement("a");
     link.href = "/resume/Subhan-Nizar-Resume.pdf";
@@ -21,10 +25,10 @@ const HeroSection: React.FC = () => {
             Subhan Nizar
           </h1>
           <p className="text-sm max-w-md text-center md:text-left">
-            Middle-level Fullstack Engineer with +6 years of experience working
-            with local companies and International Companies. Creating test
-            cases, creating Rest-API based on JSON data schema, and fast
-            learning ability.
+            Middle-level Fullstack Engineer with +{experience} years of
+            experience working with local companies and International Companies.
+            Creating test cases, creating Rest-API based on JSON data schema,
+            and fast learning ability.
           </p>
 
           <div>

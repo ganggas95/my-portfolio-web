@@ -11,9 +11,11 @@ type Meta = {
  * @returns The JSX element representing the Document component.
  */
 export default function Document(): JSX.Element {
+  const START_EXPERIENCE = parseInt(process.env.START_EXPERIENCE || "0");
+  const experience = new Date().getFullYear() - START_EXPERIENCE;
   const meta: Meta = {
     title: "Subhan Nizar - Fullstack Engineer",
-    description: "Middle-level Fullstack Engineer with +6 years of experience working with local companies and International Companies. Creating test cases, creating Rest-API based on JSON data schema, and fast learning ability.",
+    description: `Middle-level Fullstack Engineer with +${experience} years of experience working with local companies and International Companies. Creating test cases, creating Rest-API based on JSON data schema, and fast learning ability."`,
     image: "https://subhannizar.com/images/hero.png",
   };
 
