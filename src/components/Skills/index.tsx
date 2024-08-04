@@ -36,7 +36,15 @@ const SkillsSection: React.FC = () => {
     },
     {
       name: "Python",
-      level: 7,
+      level: 9,
+    },
+    {
+      name: "Dask",
+      level: 8,
+    },
+    {
+      name: "Pandas",
+      level: 8,
     },
     {
       name: "Flask",
@@ -50,22 +58,26 @@ const SkillsSection: React.FC = () => {
       name: "Nest.js",
       level: 8,
     },
+    {
+      name: "PostgreSQL",
+      level: 8,
+    },
   ] as SkillType[];
   return (
     <section
-      className="py-4 w-full skills-section px-14 md:px-24 justify-between flex items-center"
+      className="py-4 w-full container skills-section justify-between flex items-center"
       id="skills"
     >
-      <MyPicture className="hidden md:flex" />
-      <div className="w-full flex justify-center items-center">
-        <div className="w-full md:w-1/2 flex flex-col gap-y-4">
-          <h3 className="text-netural text-2xl text-center md:text-left">
+      <MyPicture className="hidden lg:flex transform -scale-x-100" />
+      <div className="w-full flex justify-end items-end">
+        <div className="w-full mx-4 items-end flex flex-col gap-y-4">
+          <h3 className="text-netural text-2xl text-center lg:text-left">
             My Skills
           </h3>
-          <p className="text-center md:text-left">
+          <p className="text-center lg:text-left">
             I have skills in the following technologies.
           </p>
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-4 w-full lg:max-w-lg">
             {skills.map((skill) => (
               <div className="flex flex-col" key={skill.name}>
                 <label className="text-sm">{skill.name}</label>

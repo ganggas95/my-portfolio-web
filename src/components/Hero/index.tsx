@@ -17,14 +17,14 @@ const HeroSection: React.FC<{ experience: number }> = ({
     document.body.removeChild(link);
   };
   return (
-    <section className="py-4 w-full hero-section px-4 md:px-24 flex items-center">
-      <div className="w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
-        <div className="w-full md:w-1/2 flex flex-col gap-y-4 items-center md:items-start mt-10 md:mt-0">
+    <section className="py-4 w-full container hero-section flex items-center">
+      <div className="w-full flex flex-col-reverse lg:flex-row justify-center md:justify-between items-center">
+        <div className="w-full lg:w-1/2 flex flex-col gap-y-4 items-center lg:items-start mt-10 lg:mt-0">
           <h3 className="text-netural">Hi, I am</h3>
-          <h1 className="text-4xl inline-flex gap-x-3 text-center md:text-left hero-name">
+          <h1 className="text-4xl inline-flex gap-x-3 text-center lg:text-left hero-name">
             Subhan Nizar
           </h1>
-          <p className="text-sm max-w-md text-center md:text-left">
+          <p className="text-sm max-w-md text-center lg:text-left">
             Middle-level Fullstack Engineer with +{experience} years of
             experience working with local companies and International Companies.
             Creating test cases, creating Rest-API based on JSON data schema,

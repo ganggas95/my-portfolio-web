@@ -13,7 +13,7 @@ const CardProject: React.FC<CardProjectPropsType> = ({
   return (
     <CarouselItem
       className={
-        "basis-1/1 md:basis-1/3 flex flex-col justify-start gap-2 card-project"
+        "basis-1/1 lg:basis-1/3 flex flex-col justify-start gap-2 card-project"
       }
     >
       <div

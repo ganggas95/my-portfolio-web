@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
   ];
   return (
     <section
-      className="py-4 w-full contact-section px-14 md:px-24 flex items-center"
+      className="py-4 w-full container contact-section flex items-center"
       id="contact"
     >
       <div className="w-full flex flex-col gap-y-24 justify-center items-center">

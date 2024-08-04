@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/Hero";
 import ProjectSection from "@/components/Projects";
 import SkillsSection from "@/components/Skills";
+import Head from "next/head";
 import { useEffect } from "react";
 
 export const getServerSideProps = async () => {
@@ -23,6 +24,9 @@ export default function Home({ experience }: { experience: number }) {
   }, []);
   return (
     <>
+      <Head>
+        <title>Subhan Nizar - Fullstack Engineer</title>
+      </Head>
       <Header />
       <main className="bg-gray-800 text-white w-screen flex min-h-screen flex-col items-center overflow-y-auto">
         <HeroSection experience={experience} />

@@ -1,6 +1,11 @@
 import { ProjectType } from "@/types/project.type";
 import React from "react";
-import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "../ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 import CardProject from "./CardProject";
 import "./Projects.modules.scss";
 
@@ -70,7 +75,7 @@ const ProjectSection: React.FC = () => {
     },
   ] as ProjectType[];
   return (
-    <section className="py-4 w-full project-section px-14 md:px-24" id="projects">
+    <section className="py-4 w-full container project-section" id="projects">
       <div className="h-full w-full flex flex-col justify-center items-center gap-y-4">
         <h1 className="text-center text-4xl">Projects</h1>
         <Carousel
@@ -85,8 +90,11 @@ const ProjectSection: React.FC = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious variant={"destructive"} />
-          <CarouselNext variant={"destructive"}/>
+          <CarouselPrevious
+            variant={"destructive"}
+            className="hidden lg:flex"
+          />
+          <CarouselNext variant={"destructive"} className="hidden lg:flex" />
         </Carousel>
       </div>
     </section>
