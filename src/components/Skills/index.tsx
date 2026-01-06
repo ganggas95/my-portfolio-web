@@ -11,15 +11,15 @@ type SkillType = {
 const SkillsSection: React.FC = () => {
   const skills = [
     {
-      name: "HTML",
+      name: "Next.js",
       level: 8,
     },
     {
-      name: "CSS (Cascade Style Sheets)",
+      name: "N8N Automation",
       level: 7,
     },
     {
-      name: "JavaScript",
+      name: "FastAPI",
       level: 8,
     },
     {

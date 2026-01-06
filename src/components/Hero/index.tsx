@@ -25,10 +25,11 @@ const HeroSection: React.FC<{ experience: number }> = ({
             Subhan Nizar
           </h1>
           <p className="text-sm max-w-md text-center lg:text-left">
-            Middle-level Fullstack Engineer with +{experience} years of
-            experience working with local companies and International Companies.
-            Creating test cases, creating Rest-API based on JSON data schema,
-            and fast learning ability.
+            Fullstack Engineer ({experience}+ years) specializing in Python
+            (FastAPI/Flask) and Node.js (NestJS) for scalable backend, alongside
+            React/Next.js and Vue.js for high-performance frontends. Proven
+            track record in automating data pipelines for government health
+            sectors and developing SaaS platforms for international markets.
           </p>
 
           <div>
