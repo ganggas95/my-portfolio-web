@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect x="90" y="90" width="1020" height="420" rx="24" fill="#0b1220" opacity="0.9"/>
+  <rect x="90" y="90" width="1020" height="8" fill="url(#accent)"/>
+  <g fill="#e5e7eb" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'">
+    <text x="140" y="240" font-size="56" font-weight="700">Ribath Al Musthofa</text>
+    <text x="140" y="300" font-size="26" opacity="0.9">Foundation Website</text>
+    <text x="140" y="360" font-size="22" opacity="0.85">Free education • Tahfidz Qur'an • Character building</text>
+    <text x="140" y="410" font-size="18" opacity="0.7">ribath-almusthofa.org</text>
+  </g>
+  <g opacity="0.25" fill="url(#accent)">
+    <circle cx="1040" cy="180" r="90"/>
+    <circle cx="980" cy="420" r="120"/>
+  </g>
+</svg>

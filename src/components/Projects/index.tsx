@@ -12,24 +12,7 @@ import "./Projects.modules.scss";
 const ProjectSection: React.FC = () => {
   const projects = [
     {
-      name: "GISBWSNT1 (2017)",
-      tags: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Python",
-        "jQuery",
-        "Google Maps API",
-        "Flask",
-        "MySql",
-      ],
-      description:
-        "GISBWSNT1 is a web application that allows the user to view rivers, dams, reservoirs, springs, wells, lakes, and other water resources within the scope of the West Nusa Tenggara region.",
-      image: "gisbwsnt1.png",
-      url: "http://gis.bwsnt1.net/",
-    },
-    {
-      name: "Sitampan Kota Bima (2022 - 2023)",
+      name: "Absensi Kota Bima (2022 - 2023)",
       tags: [
         "HTML",
         "CSS",
@@ -43,27 +26,9 @@ const ProjectSection: React.FC = () => {
         "Celery",
       ],
       description:
-        "Sitampan Kota Bima is a web application that manages employee data and attendance data within the scope of the Bima city government.",
+        "Absensi Kota Bima is a web application that manages employee data and attendance data within the scope of the Bima city government.",
       image: "sitampan.png",
-      url: "http://sitampan.bimakota.go.id/",
-    },
-    {
-      name: "QuokkaHR (Okt 2021 - Jun 2023)",
-      tags: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Typescript",
-        "Python",
-        "Vue3",
-        "Flask",
-        "Postgres",
-        "Celery",
-      ],
-      description:
-        "Quokka is a SaaS cloud-based people management platform which helps companies develop engaged and high performing teams.",
-      image: "quokkahr.png",
-      url: "https://quokkahr.com/",
+      url: "http://absensi.bimakota.go.id/",
     },
     {
       name: "Jannata Resort & SPA Clone",
@@ -72,6 +37,15 @@ const ProjectSection: React.FC = () => {
         "Jannata Resort & SPA clone is a project that I build using Nuxt.js for learning purpose. It is a clone of the Jannata Resort and SPA website.",
       image: "jannata.png",
       url: "https://jannata-resort-clone.vercel.app/",
+    },
+    {
+      name: "Ribath Al Musthofa (Foundation Website)",
+      tags: ["Website", "Non-profit", "Education", "Tahfidz"],
+      description:
+        "Ribath Al Musthofa is a foundation website that highlights free education, Qur'an memorization, and character building for the community—especially orphans and children from low-income families.",
+      image:
+        "https://zhrvqlgrqqvltcpnrjkh.supabase.co/storage/v1/object/public/public-images/images/hero.jpg",
+      url: "https://ribath-almusthofa.org/",
     },
   ] as ProjectType[];
   return (

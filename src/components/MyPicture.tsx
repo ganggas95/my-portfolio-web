@@ -14,9 +14,12 @@ const MyPicture: React.FC<Props> = ({ className }: Props) => {
     >
       <div className="relative h-[20rem] w-[20rem] md:h-[40rem] md:w-[40rem] min-w-[5rem] min-h-[5rem] md:min-w-[35rem] md:min-h-[35rem] bg-hero">
         <div
-          className="absolute bottom-0 right-[5%] h-[80%] w-[80%] z-[2] bg-cover bg-main bg-no-repeat"
+          className="absolute bottom-0 right-[5%] h-[80%] w-[80%] z-[2] bg-main bg-no-repeat"
           style={{
-            backgroundImage: `url(/images/nizar-no-bg.png)`,
+            backgroundImage: "url(/images/nizar-new.png)",
+            backgroundPosition: "60% 25%",
+            backgroundSize: "85%",
+            backgroundRepeat: "no-repeat",
           }}
         />
         <div className="bg-1" />
