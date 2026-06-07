@@ -22,8 +22,8 @@ export default function Document(): JSX.Element {
   const canonicalUrl = `${siteUrl}/`;
   const ogImage = `${siteUrl}/images/hero.png`;
   const meta: Meta = {
-    title: "Subhan Nizar - Fullstack Engineer",
-    description: `Middle-level Fullstack Engineer with +${experience} years of experience working with local companies and international companies. Creating test cases, creating REST APIs based on JSON data schema, and fast learning ability.`,
+    title: "Subhan Nizar - Senior Fullstack Engineer",
+    description: `Senior Fullstack Engineer with ${experience}+ years of experience building scalable SaaS, government systems, and data automation pipelines. Specialized in Python (FastAPI/Flask), Node.js (NestJS), React/Next.js, Vue/Nuxt, PostgreSQL, Airflow, and workflow automation.`,
     image: ogImage,
   };
 
@@ -90,11 +90,25 @@ export default function Document(): JSX.Element {
               "@type": "Person",
               name: "Subhan Nizar",
               url: siteUrl,
-              jobTitle: "Fullstack Engineer",
+              jobTitle: "Senior Fullstack Engineer",
               image: ogImage,
               sameAs: [
                 "https://github.com/ganggas95",
                 "https://www.linkedin.com/in/subhan-nizar-15a027131/",
+              ],
+              knowsAbout: [
+                "Python",
+                "FastAPI",
+                "Flask",
+                "Node.js",
+                "NestJS",
+                "React",
+                "Next.js",
+                "Vue.js",
+                "Nuxt.js",
+                "PostgreSQL",
+                "Apache Airflow",
+                "n8n",
               ],
             }),
           }}

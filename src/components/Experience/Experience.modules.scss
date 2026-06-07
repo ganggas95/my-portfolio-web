@@ -1,8 +1,8 @@
-.project-section {
+.experience-section {
   min-height: 100vh;
   h1 {
     position: relative;
-    max-width: 320px;
+    max-width: 180px;
     box-sizing: border-box;
     overflow: hidden;
 
@@ -26,9 +26,9 @@
       }
     }
   }
-  .card-project {
+  .card-experience {
     @apply w-full;
-    .project-image {
+    .experience-image {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

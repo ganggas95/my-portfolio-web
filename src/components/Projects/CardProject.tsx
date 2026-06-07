@@ -12,7 +12,9 @@ const CardProject: React.FC<CardProjectPropsType> = ({
 }: CardProjectPropsType) => {
   const imageUrl = project.image.startsWith("http")
     ? project.image
-    : `/projects/${project.image}`;
+    : project.image.startsWith("/")
+      ? project.image
+      : `/projects/${project.image}`;
   const hasLink = useMemo(() => !!project.url?.trim(), [project.url]);
   return (
     <CarouselItem

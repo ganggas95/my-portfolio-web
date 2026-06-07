@@ -1,94 +1,118 @@
 import React from "react";
-import MyPicture from "../MyPicture";
-import { Progress } from "../ui/progress";
+import { Badge } from "../ui/badge";
 import "./Skills.modules.scss";
 
-type SkillType = {
-  name: string;
-  level: number;
-};
-
 const SkillsSection: React.FC = () => {
-  const skills = [
+  const coreStack = [
+    "Python",
+    "FastAPI",
+    "Flask",
+    "Node.js",
+    "NestJS",
+    "PostgreSQL",
+    "React",
+    "Next.js",
+    "Vue 3",
+    "Nuxt.js",
+    "Apache Airflow",
+    "n8n",
+    "Docker",
+  ] as const;
+
+  const skillGroups = [
     {
-      name: "Next.js",
-      level: 8,
+      title: "Backend",
+      items: [
+        "Python",
+        "FastAPI",
+        "Flask",
+        "Node.js",
+        "NestJS",
+        "SQLAlchemy",
+        "Celery",
+        "GraphQL",
+      ],
     },
     {
-      name: "N8N Automation",
-      level: 7,
+      title: "Frontend",
+      items: [
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Vue 3",
+        "Nuxt.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+      ],
     },
     {
-      name: "FastAPI",
-      level: 8,
+      title: "Database",
+      items: ["PostgreSQL", "MySQL", "Redis", "MariaDB", "MongoDB"],
     },
     {
-      name: "TypeScript",
-      level: 9,
+      title: "Data Engineering",
+      items: ["Apache Airflow", "Pandas", "Dask"],
     },
     {
-      name: "React",
-      level: 8,
+      title: "DevOps",
+      items: ["Docker", "Nginx", "Git", "GitLab CI/CD"],
     },
     {
-      name: "Vue.js",
-      level: 8,
+      title: "Automation",
+      items: ["n8n"],
     },
-    {
-      name: "Python",
-      level: 9,
-    },
-    {
-      name: "Dask",
-      level: 8,
-    },
-    {
-      name: "Pandas",
-      level: 8,
-    },
-    {
-      name: "Flask",
-      level: 9,
-    },
-    {
-      name: "Node.js",
-      level: 8,
-    },
-    {
-      name: "Nest.js",
-      level: 8,
-    },
-    {
-      name: "PostgreSQL",
-      level: 8,
-    },
-  ] as SkillType[];
+  ] as const;
   return (
-    <section
-      className="py-4 w-full container skills-section justify-between flex items-center"
-      id="skills"
-    >
-      <MyPicture className="hidden lg:flex transform -scale-x-100" />
-      <div className="w-full flex justify-end items-end">
-        <div className="w-full mx-4 items-end flex flex-col gap-y-4">
-          <h3 className="text-netural text-2xl text-center lg:text-left">
-            My Skills
-          </h3>
-          <p className="text-center lg:text-left">
-            I have skills in the following technologies.
+    <section className="py-14 w-full container skills-section" id="skills">
+      <div className="w-full flex flex-col gap-10">
+        <div className="w-full flex flex-col gap-2 items-center">
+          <h2 className="text-netural text-4xl text-center">Skills</h2>
+          <p className="text-center text-white/80 max-w-2xl">
+            Core stack for building scalable SaaS, government systems, and data
+            automation pipelines.
           </p>
-          <ul className="flex flex-col gap-y-4 w-full lg:max-w-lg">
-            {skills.map((skill) => (
-              <div className="flex flex-col" key={skill.name}>
-                <label className="text-sm">{skill.name}</label>
-                <Progress
-                  value={skill.level * 10}
-                  max={10}
-                  className="w-full bg-destructive-foreground"
-                />
-              </div>
+        </div>
+
+        {/* <div className="w-full flex flex-col gap-3 items-center">
+          <h3 className="text-sm font-semibold text-white/90 tracking-wide">
+            Core Stack
+          </h3>
+          <ul className="flex flex-row flex-wrap justify-center gap-2 max-w-4xl">
+            {coreStack.map((item) => (
+              <li key={`core-${item}`}>
+                <Badge variant={"destructive"}>{item}</Badge>
+              </li>
             ))}
           </ul>
+        </div> */}
+
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {skillGroups.map((group) => (
+            <div
+              key={group.title}
+              className="rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors"
+            >
+              <div className="flex flex-col gap-1">
+                <h3 className="text-lg font-semibold">{group.title}</h3>
+                <p className="text-sm text-white/70">
+                  {group.items.length} technologies
+                </p>
+              </div>
+              <ul className="mt-3 flex flex-row flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li key={`${group.title}-${item}`}>
+                    <Badge
+                      variant={"outline"}
+                      className="border-white/25 text-white/90 bg-white/5 hover:bg-white/10"
+                    >
+                      {item}
+                    </Badge>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
