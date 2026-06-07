@@ -16,7 +16,7 @@ const ProjectSection: React.FC = () => {
         "n8n",
       ],
       description:
-        "Enrollment management with recurring billing, invoicing workflows, prerequisites validation, and automated notifications/reminders.",
+        "Enrollment management with recurring billing, invoicing workflows, prerequisites validation, and automated notifications/reminders. AI-assisted workflows were used to improve iteration speed, documentation quality, and code review throughput.",
       image: "/projects/gisbwsnt1.png",
       url: "",
     },
@@ -24,7 +24,7 @@ const ProjectSection: React.FC = () => {
       name: "Ministry of Health — BPJS Data Automation",
       tags: ["Python", "Apache Airflow", "Dask", "Pandas", "PostgreSQL"],
       description:
-        "Automated healthcare data ingestion/cleansing with orchestrated pipelines for large datasets, improving data quality and reducing manual processing.",
+        "Automated healthcare data ingestion/cleansing with orchestrated pipelines for large datasets, improving data quality and reducing manual processing. AI-assisted workflows helped with troubleshooting, documentation, and data validation logic iteration.",
       image: "/images/hero.png",
       url: "",
     },
@@ -32,7 +32,7 @@ const ProjectSection: React.FC = () => {
       name: "Employee & Attendance System — Bima City Government",
       tags: ["FastAPI", "Flask", "PostgreSQL", "Redis", "Celery", "Vue.js"],
       description:
-        "Integrated employee management, attendance devices, and secure data exchange (E‑Kinerja), including deployment, maintenance, and scaling.",
+        "Integrated employee management, attendance devices, and secure data exchange (E‑Kinerja), including deployment, maintenance, and scaling. AI-assisted workflows supported problem solving and documentation for integrations and edge cases.",
       image: "sitampan.png",
       url: "",
     },
@@ -40,7 +40,7 @@ const ProjectSection: React.FC = () => {
       name: "Ludes.in — Point of Sales Platform",
       tags: ["NestJS", "PostgreSQL", "React", "Tailwind CSS", "React Native"],
       description:
-        "Backend services and APIs for inventory & transaction management for SMEs, including testing and code review process improvements.",
+        "Backend services and APIs for inventory & transaction management for SMEs, including testing and code review process improvements. AI-assisted workflows helped speed up implementation and review cycles.",
       image: "/images/hero.png",
       url: "",
     },
@@ -48,7 +48,7 @@ const ProjectSection: React.FC = () => {
       name: "Quokka HR — Frontend Migration (Vue 2 → Vue 3)",
       tags: ["Vue.js", "Vue 3", "Nuxt.js", "Vite", "GraphQL", "PostgreSQL"],
       description:
-        "Led enterprise frontend architecture migration, improved maintainability, and mentored team members through reviews and collaboration.",
+        "Led enterprise frontend architecture migration, improved maintainability, and mentored team members through reviews and collaboration. AI-assisted workflows supported refactoring, review, and documentation updates.",
       image: "quokkahr.png",
       url: "",
     },

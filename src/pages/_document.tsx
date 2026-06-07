@@ -23,7 +23,7 @@ export default function Document(): JSX.Element {
   const ogImage = `${siteUrl}/images/hero.png`;
   const meta: Meta = {
     title: "Subhan Nizar - Senior Fullstack Engineer",
-    description: `Senior Fullstack Engineer with ${experience}+ years of experience building scalable SaaS, government systems, and data automation pipelines. Specialized in Python (FastAPI/Flask), Node.js (NestJS), React/Next.js, Vue/Nuxt, PostgreSQL, Airflow, and workflow automation.`,
+    description: `Senior Fullstack Engineer & Backend Specialist with ${experience}+ years of experience building scalable SaaS and government systems. Specialized in Python (FastAPI/Flask), Node.js (NestJS), React/Next.js, PostgreSQL, workflow automation, and AI-assisted software development to improve delivery speed and code quality.`,
     image: ogImage,
   };
 
@@ -109,6 +109,8 @@ export default function Document(): JSX.Element {
                 "PostgreSQL",
                 "Apache Airflow",
                 "n8n",
+                "AI-assisted software development",
+                "Agentic development workflows",
               ],
             }),
           }}

@@ -13,6 +13,7 @@ const ExperienceSection: React.FC = () => {
         "Built frontend modules using React, Next.js, and TypeScript.",
         "Implemented workflow automation for enrollment and payment reminders using n8n.",
         "Optimized reporting performance with PostgreSQL query and JSON aggregation improvements.",
+        "Used AI-assisted workflows to accelerate implementation and keep documentation and reviews consistent.",
       ],
       technologies: [
         "NestJS",
@@ -33,6 +34,7 @@ const ExperienceSection: React.FC = () => {
         "Delivered custom web applications and automation systems for public and private sector clients.",
         "Built and maintained APIs, dashboards, and workflow automation solutions.",
         "Translated business requirements into scalable software products and deployments.",
+        "Applied AI-assisted workflows for faster iteration, troubleshooting, and documentation maintenance.",
       ],
       technologies: [
         "Python",
@@ -53,6 +55,7 @@ const ExperienceSection: React.FC = () => {
         "Led migration of enterprise frontend architecture from Vue 2 to Vue 3.",
         "Developed and maintained APIs and frontend applications.",
         "Built administrative back-office systems and led frontend code reviews.",
+        "Used AI-assisted workflows to support refactoring, code review, and issue investigation.",
       ],
       technologies: [
         "Vue.js",
@@ -73,6 +76,7 @@ const ExperienceSection: React.FC = () => {
         "Developed government information systems and internal business applications.",
         "Designed databases and application architectures for multiple projects.",
         "Built and maintained Point-of-Sale (POS) systems and mentored students.",
+        "Used AI-assisted workflows to speed up debugging, documentation, and implementation planning.",
       ],
       technologies: [
         "React",
@@ -97,7 +101,8 @@ const ExperienceSection: React.FC = () => {
           <h1 className="text-center text-4xl">Experience</h1>
           <p className="text-center text-white/80 max-w-2xl">
             Recent roles and responsibilities across SaaS, public sector
-            systems, and data automation.
+            systems, and data automation—using AI-assisted workflows where it
+            improves delivery and quality.
           </p>
         </div>
 

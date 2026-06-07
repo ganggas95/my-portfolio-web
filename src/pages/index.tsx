@@ -1,3 +1,4 @@
+import AboutSection from "@/components/About";
 import ContactSection from "@/components/Contact";
 import ExperienceSection from "@/components/Experience";
 import Header from "@/components/Header";
@@ -37,12 +38,13 @@ export default function Home({ experience }: { experience: number }) {
         <title>Subhan Nizar - Senior Fullstack Engineer</title>
         <meta
           name="description"
-          content="Senior Fullstack Engineer (Python/FastAPI/Flask, Node.js/NestJS, React/Next.js, Vue/Nuxt) with 9+ years of experience building scalable SaaS, government systems, and data automation pipelines."
+          content="Senior Fullstack Engineer & Backend Specialist with 9+ years of experience building scalable SaaS and government systems using Python (FastAPI/Flask), Node.js (NestJS), and React/Next.js, with workflow automation and AI-assisted software development to improve delivery speed and code quality."
         />
       </Head>
       <Header />
       <main className="bg-gray-800 text-white w-screen flex min-h-screen flex-col items-center overflow-y-auto">
         <HeroSection experience={experience} />
+        <AboutSection />
         <SkillsSection />
         <ExperienceSection />
         <ProjectSection />

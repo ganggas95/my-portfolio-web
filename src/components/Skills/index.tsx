@@ -62,6 +62,18 @@ const SkillsSection: React.FC = () => {
       title: "Automation",
       items: ["n8n"],
     },
+    {
+      title: "AI & Developer Productivity",
+      items: [
+        "AI-Assisted Software Development",
+        "Agentic Development Workflows",
+        "Prompt Engineering",
+        "LLM Workflow Automation",
+        "AI-powered Documentation",
+        "AI-assisted Code Review",
+        "AI-assisted Architecture Design",
+      ],
+    },
   ] as const;
   return (
     <section className="py-14 w-full container skills-section" id="skills">
@@ -69,12 +81,12 @@ const SkillsSection: React.FC = () => {
         <div className="w-full flex flex-col gap-2 items-center">
           <h2 className="text-netural text-4xl text-center">Skills</h2>
           <p className="text-center text-white/80 max-w-2xl">
-            Core stack for building scalable SaaS, government systems, and data
-            automation pipelines.
+            Core stack for building scalable SaaS and government systems, plus
+            AI-assisted workflows that improve delivery speed and code quality.
           </p>
         </div>
 
-        {/* <div className="w-full flex flex-col gap-3 items-center">
+        <div className="w-full flex flex-col gap-3 items-center">
           <h3 className="text-sm font-semibold text-white/90 tracking-wide">
             Core Stack
           </h3>
@@ -85,7 +97,7 @@ const SkillsSection: React.FC = () => {
               </li>
             ))}
           </ul>
-        </div> */}
+        </div>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {skillGroups.map((group) => (
